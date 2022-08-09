@@ -12,17 +12,13 @@
 
 #include "config.h"
 
-/* 成员and方法的可见性登记 ------------------------------*/
+/* 公共成员and方法的可见性登记 --------------------------*/
 
 /* 指针类型宏定义 */
 #define CLASS_TYPEDEF_PUBLIC    Class_Typedef*
-#define CLASS_TYPEDEF_PRIVATE   Class_Internal*
 /* 公共成员可见性登记 */
 #define CLASS_NAME_VISIBLE            CLASS_TYPEDEF_PUBLIC
 #define CLASS_GET_NAME_VISIBLE        CLASS_TYPEDEF_PUBLIC
-/* 私有成员可见性登记 */
-#define CLASS_INTRO_VISIBLE           CLASS_TYPEDEF_PRIVATE
-#define CLASS_AGE_VISIBLE             CLASS_TYPEDEF_PRIVATE
 
 /* public struct -------------------------------------*/
 
@@ -31,17 +27,6 @@ typedef struct Class_Struct{
 
     uint8_t *(*Get_Name)(struct Class_Struct const *const cp);
 }Class_Typedef;
-
-/* private struct ------------------------------------*/
-
-typedef struct{
-    union{
-        Class_Typedef public_Class_Object;
-        void *intro;
-    };
-
-    uint8_t age;
-}Class_Internal;
 
 /* 结构体处理函数 -------------------------------------*/
 

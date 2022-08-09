@@ -12,6 +12,27 @@
 #include "stdlib.h"
 #include "string.h"
 
+/* 私有成员and方法的可见性登记 --------------------------*/
+
+/* 指针类型宏定义 */
+#define CLASS_TYPEDEF_PRIVATE   Class_Internal*
+/* 私有成员可见性登记 */
+#define CLASS_INTRO_VISIBLE           CLASS_TYPEDEF_PRIVATE
+#define CLASS_AGE_VISIBLE             CLASS_TYPEDEF_PRIVATE
+
+/* private struct ------------------------------------*/
+
+typedef struct{
+    union{
+        Class_Typedef public_Class_Object;
+        void *intro;
+    };
+
+    uint8_t age;
+}Class_Internal;
+
+/* 对象行为函数 --------------------------------------*/
+
 /**
  * @brief 创建一个对象
  * 
