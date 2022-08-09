@@ -1,0 +1,5 @@
+project(test_01)
+aux_source_directory(src SRC_SUB)
+aux_source_directory(. SRC_CUR)
+add_executable(test_01 ${SRC_SUB} ${SRC_CUR})
+include_directories(include)

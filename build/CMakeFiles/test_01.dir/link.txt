@@ -1,0 +1,3 @@
+C:\Espressif\tools\cmake\3.20.3\bin\cmake.exe -E rm -f CMakeFiles\test_01.dir/objects.a
+C:\Users\YEWAN\mingw64\bin\ar.exe cr CMakeFiles\test_01.dir/objects.a @CMakeFiles\test_01.dir\objects1.rsp
+C:\Users\YEWAN\mingw64\bin\x86_64-w64-mingw32-gcc.exe -g -Wl,--whole-archive CMakeFiles\test_01.dir/objects.a -Wl,--no-whole-archive -o test_01.exe -Wl,--out-implib,libtest_01.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\test_01.dir\linklibs.rsp
