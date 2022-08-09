@@ -65,7 +65,7 @@ void Delete_Class_Typedef(Class_Typedef *cp)
 {
     printf("The object(%s) has been freed!\r\n", ((CLASS_NAME_VISIBLE)cp)->name);
 
-    /* 依此释放 */
+    /* 依次释放 */
     if(((CLASS_INTRO_VISIBLE)cp)->intro != NULL)
         { free(((CLASS_INTRO_VISIBLE)cp)->intro); ((CLASS_INTRO_VISIBLE)cp)->intro = NULL; }
     if(((CLASS_NAME_VISIBLE)cp)->name != NULL)
