@@ -27,14 +27,14 @@ int main()
     Child_Class *ccp = New_Child_Class("wangwu", 28, 80, "unknow");
 
     printf("The object's name is %s.\r\n",\
-        ((CLASS_PUBLIC)(((CHILD_CLASS_PUBLIC)ccp)->base_Class))->name);
+        ((CLASS_PUBLIC)PARENT_CLASS_OF_CHILD_CLASS(ccp, base_Class))->name);
     printf("The object's age is %d.\r\n",\
-        ((CLASS_SET_NAME_VISIBLE)(((CHILD_CLASS_PUBLIC)ccp)->base_Class))->class_Method_Table\
+        ((CLASS_SET_NAME_VISIBLE)PARENT_CLASS_OF_CHILD_CLASS(ccp, base_Class))->class_Method_Table\
         .Get_Age(((CHILD_CLASS_PUBLIC)ccp)->base_Class));
-    ((CLASS_SET_NAME_VISIBLE)(((CHILD_CLASS_PUBLIC)ccp)->base_Class))->class_Method_Table\
+    ((CLASS_SET_NAME_VISIBLE)PARENT_CLASS_OF_CHILD_CLASS(ccp, base_Class))->class_Method_Table\
         .Set_Name(((CHILD_CLASS_PUBLIC)ccp)->base_Class, "lisi");
     printf("The object's name is %s.\r\n",\
-        ((CLASS_PUBLIC)(((CHILD_CLASS_PUBLIC)ccp)->base_Class))->name);
+        ((CLASS_PUBLIC)PARENT_CLASS_OF_CHILD_CLASS(ccp, base_Class))->name);
     Delete_Child_Class(ccp);
 
     return 0;

@@ -20,6 +20,11 @@
 #define CHILD_CLASS_HEIGH_VISIBLE       CHILD_CLASS_PUBLIC
 /* 公有行为可见性登记 */
 
+/* 父类宏 ---------------------------------------------*/
+
+#define PARENT_CLASS_OF_CHILD_CLASS(Child_Class, Parent_Class)\
+    ((CHILD_CLASS_PUBLIC)Child_Class->Parent_Class)
+
 /* public struct -------------------------------------*/
 
 typedef struct Class_Child_Struct{
