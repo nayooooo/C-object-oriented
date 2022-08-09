@@ -1,5 +1,8 @@
-CMakeFiles/test_01.dir/main.obj: \
- D:\code\C\VScodeProgram\project\test_01\main.c \
+CMakeFiles/test_01.dir/src/child_class.obj: \
+ D:\code\C\VScodeProgram\project\test_01\src\child_class.c \
+ D:/code/C/VScodeProgram/project/test_01/include/child_class.h \
+ D:/code/C/VScodeProgram/project/test_01/include/class.h \
+ D:/code/C/VScodeProgram/project/test_01/include/config.h \
  C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/stdio.h \
  C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
  C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/_mingw.h \
@@ -13,8 +16,11 @@ CMakeFiles/test_01.dir/main.obj: \
  C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
  C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
  C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
- D:/code/C/VScodeProgram/project/test_01/include/config.h \
- D:/code/C/VScodeProgram/project/test_01/include/class.h \
- D:/code/C/VScodeProgram/project/test_01/include/config.h \
- D:/code/C/VScodeProgram/project/test_01/include/child_class.h \
- D:/code/C/VScodeProgram/project/test_01/include/class.h
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/stdlib.h \
+ C:/Users/YEWAN/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+ C:/Users/YEWAN/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/limits.h \
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/malloc.h \
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/string.h \
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h

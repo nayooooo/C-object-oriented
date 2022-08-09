@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/code/C/VScodeProgram/project/test_01/main.c" "CMakeFiles/test_01.dir/main.obj" "gcc" "CMakeFiles/test_01.dir/main.obj.d"
+  "D:/code/C/VScodeProgram/project/test_01/src/child_class.c" "CMakeFiles/test_01.dir/src/child_class.obj" "gcc" "CMakeFiles/test_01.dir/src/child_class.obj.d"
   "D:/code/C/VScodeProgram/project/test_01/src/class.c" "CMakeFiles/test_01.dir/src/class.obj" "gcc" "CMakeFiles/test_01.dir/src/class.obj.d"
   )
 

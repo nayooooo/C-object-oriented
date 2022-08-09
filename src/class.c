@@ -15,21 +15,23 @@
 /* 私有成员and方法的可见性登记 --------------------------*/
 
 /* 指针类型宏定义 */
-#define CLASS_TYPEDEF_PRIVATE   Class_Internal*
+#define CLASS_PRIVATE           Class_Internal*
 /* 私有属性可见性登记 */
-#define CLASS_INTRO_VISIBLE     CLASS_TYPEDEF_PRIVATE
-#define CLASS_AGE_VISIBLE       CLASS_TYPEDEF_PRIVATE
+#define CLASS_INTRO_VISIBLE     CLASS_PRIVATE
+#define CLASS_AGE_VISIBLE       CLASS_PRIVATE
 /* 私有行为可见性登记 */
 
-/* private struct ------------------------------------*/
+/* private and public struct -------------------------*/
 
 typedef struct{
+    /* 公有属性and行为 */
     union{
-        Class public_Class_Object;
+        Class public_Class;
         void *intro;
     };
-
+    /* 私有属性 */
     uint8_t age;
+    /* 私有行为 */
 }Class_Internal;
 
 /* 构造和析构 ----------------------------------------*/
@@ -37,17 +39,18 @@ typedef struct{
 /**
  * @brief 创建一个对象
  * 
- * @param cp 对象指针
- * @param name 对象的名字的指针
+ * @param name 对象的名字的指针(public)
+ * @param age 对象的名字的指针(private)
  * @return Class* 对象的指针
  */
-Class * New_Class_Typedef(uint8_t *name, uint8_t age)
+Class *New_Class(uint8_t *name, uint8_t age)
 {
     Class_Internal *p = (Class_Internal*)malloc(sizeof(Class_Internal));
 
     /* 赋初值 */
     memset(p, 0, sizeof(Class_Internal));
 
+    /* 继承的类 */
     /* 公共属性 */
     ((CLASS_NAME_VISIBLE)p)->name = name;
     /* 公共行为 */
@@ -59,7 +62,7 @@ Class * New_Class_Typedef(uint8_t *name, uint8_t age)
     /* 私有行为 */
 
     printf("The object(%s) has been created!\r\n", ((CLASS_NAME_VISIBLE)p)->name);
-    return (Class*)p;
+    return (CLASS_PUBLIC)p;
 }
 
 /**
@@ -67,15 +70,13 @@ Class * New_Class_Typedef(uint8_t *name, uint8_t age)
  * 
  * @param cp 对象指针
  */
-void Delete_Class_Typedef(Class *cp)
+void Delete_Class(Class *cp)
 {
     printf("The object(%s) has been freed!\r\n", ((CLASS_NAME_VISIBLE)cp)->name);
 
     /* 依次释放 */
-    if(((CLASS_NAME_VISIBLE)cp)->name != NULL)
-        { free(((CLASS_NAME_VISIBLE)cp)->name); ((CLASS_NAME_VISIBLE)cp)->name = NULL; }
-    if(((CLASS_INTRO_VISIBLE)cp)->intro != NULL)
-        { free(((CLASS_INTRO_VISIBLE)cp)->intro); ((CLASS_INTRO_VISIBLE)cp)->intro = NULL; }
+    /* 继承的类 */
+    /* 对象本身 */
     if((Class_Internal*)cp != NULL)  // 对象占用的是Class_Internal
         { free((Class_Internal*)cp); cp = NULL; }
 }

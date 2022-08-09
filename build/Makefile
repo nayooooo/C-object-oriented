@@ -144,6 +144,21 @@ main.s:
 .PHONY : main.s
 
 # target to build an object file
+src/child_class.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_01.dir\build.make CMakeFiles/test_01.dir/src/child_class.obj
+.PHONY : src/child_class.obj
+
+# target to preprocess a source file
+src/child_class.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_01.dir\build.make CMakeFiles/test_01.dir/src/child_class.i
+.PHONY : src/child_class.i
+
+# target to generate assembly for a file
+src/child_class.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_01.dir\build.make CMakeFiles/test_01.dir/src/child_class.s
+.PHONY : src/child_class.s
+
+# target to build an object file
 src/class.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_01.dir\build.make CMakeFiles/test_01.dir/src/class.obj
 .PHONY : src/class.obj
@@ -170,6 +185,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/child_class.obj
+	@echo ... src/child_class.i
+	@echo ... src/child_class.s
 	@echo ... src/class.obj
 	@echo ... src/class.i
 	@echo ... src/class.s

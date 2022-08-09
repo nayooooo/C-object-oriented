@@ -68,11 +68,26 @@ include CMakeFiles/test_01.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/test_01.dir/flags.make
 
+CMakeFiles/test_01.dir/src/child_class.obj: CMakeFiles/test_01.dir/flags.make
+CMakeFiles/test_01.dir/src/child_class.obj: CMakeFiles/test_01.dir/includes_C.rsp
+CMakeFiles/test_01.dir/src/child_class.obj: ../src/child_class.c
+CMakeFiles/test_01.dir/src/child_class.obj: CMakeFiles/test_01.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\code\C\VScodeProgram\project\test_01\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/test_01.dir/src/child_class.obj"
+	C:\Users\YEWAN\mingw64\bin\x86_64-w64-mingw32-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test_01.dir/src/child_class.obj -MF CMakeFiles\test_01.dir\src\child_class.obj.d -o CMakeFiles\test_01.dir\src\child_class.obj -c D:\code\C\VScodeProgram\project\test_01\src\child_class.c
+
+CMakeFiles/test_01.dir/src/child_class.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_01.dir/src/child_class.i"
+	C:\Users\YEWAN\mingw64\bin\x86_64-w64-mingw32-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\code\C\VScodeProgram\project\test_01\src\child_class.c > CMakeFiles\test_01.dir\src\child_class.i
+
+CMakeFiles/test_01.dir/src/child_class.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_01.dir/src/child_class.s"
+	C:\Users\YEWAN\mingw64\bin\x86_64-w64-mingw32-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\code\C\VScodeProgram\project\test_01\src\child_class.c -o CMakeFiles\test_01.dir\src\child_class.s
+
 CMakeFiles/test_01.dir/src/class.obj: CMakeFiles/test_01.dir/flags.make
 CMakeFiles/test_01.dir/src/class.obj: CMakeFiles/test_01.dir/includes_C.rsp
 CMakeFiles/test_01.dir/src/class.obj: ../src/class.c
 CMakeFiles/test_01.dir/src/class.obj: CMakeFiles/test_01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\code\C\VScodeProgram\project\test_01\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/test_01.dir/src/class.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\code\C\VScodeProgram\project\test_01\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/test_01.dir/src/class.obj"
 	C:\Users\YEWAN\mingw64\bin\x86_64-w64-mingw32-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test_01.dir/src/class.obj -MF CMakeFiles\test_01.dir\src\class.obj.d -o CMakeFiles\test_01.dir\src\class.obj -c D:\code\C\VScodeProgram\project\test_01\src\class.c
 
 CMakeFiles/test_01.dir/src/class.i: cmake_force
@@ -87,7 +102,7 @@ CMakeFiles/test_01.dir/main.obj: CMakeFiles/test_01.dir/flags.make
 CMakeFiles/test_01.dir/main.obj: CMakeFiles/test_01.dir/includes_C.rsp
 CMakeFiles/test_01.dir/main.obj: ../main.c
 CMakeFiles/test_01.dir/main.obj: CMakeFiles/test_01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\code\C\VScodeProgram\project\test_01\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/test_01.dir/main.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\code\C\VScodeProgram\project\test_01\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/test_01.dir/main.obj"
 	C:\Users\YEWAN\mingw64\bin\x86_64-w64-mingw32-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test_01.dir/main.obj -MF CMakeFiles\test_01.dir\main.obj.d -o CMakeFiles\test_01.dir\main.obj -c D:\code\C\VScodeProgram\project\test_01\main.c
 
 CMakeFiles/test_01.dir/main.i: cmake_force
@@ -100,19 +115,21 @@ CMakeFiles/test_01.dir/main.s: cmake_force
 
 # Object files for target test_01
 test_01_OBJECTS = \
+"CMakeFiles/test_01.dir/src/child_class.obj" \
 "CMakeFiles/test_01.dir/src/class.obj" \
 "CMakeFiles/test_01.dir/main.obj"
 
 # External object files for target test_01
 test_01_EXTERNAL_OBJECTS =
 
+test_01.exe: CMakeFiles/test_01.dir/src/child_class.obj
 test_01.exe: CMakeFiles/test_01.dir/src/class.obj
 test_01.exe: CMakeFiles/test_01.dir/main.obj
 test_01.exe: CMakeFiles/test_01.dir/build.make
 test_01.exe: CMakeFiles/test_01.dir/linklibs.rsp
 test_01.exe: CMakeFiles/test_01.dir/objects1.rsp
 test_01.exe: CMakeFiles/test_01.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\code\C\VScodeProgram\project\test_01\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable test_01.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\code\C\VScodeProgram\project\test_01\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable test_01.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\test_01.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

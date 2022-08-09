@@ -27,7 +27,8 @@
 
 typedef struct Class_Struct{
     uint8_t *name;
-
+    
+    /* 公有行为表 */
     struct{
         uint8_t *(*Get_Name)(struct Class_Struct const *const cp);
         void (*Set_Name)(struct Class_Struct *const cp, uint8_t *name);
@@ -35,11 +36,11 @@ typedef struct Class_Struct{
     }class_Method_Table;  // 指针不行，猜测是因为如果是指针类型，那么没有开辟真正的此结构体内的成员
 }Class;
 
-/* 结构体处理函数 -------------------------------------*/
+/* 类处理函数 -----------------------------------------*/
 
 /* 构造和析构 */
-Class * New_Class_Typedef(uint8_t *name, uint8_t age);
-void Delete_Class_Typedef(Class *cp);
+Class *New_Class(uint8_t *name, uint8_t age);
+void Delete_Class(Class *cp);
 /* 公有行为函数 */
 static uint8_t *Get_Name(Class const *const cp);
 static void Set_Name(Class *const cp, uint8_t *name);
