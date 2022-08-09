@@ -1,3 +1,12 @@
+/**
+ * @file child_class.c
+ * @author YEWAN
+ * @code UTF-8
+ * @brief 面向对象的类（继承后的子类）
+ * @version 1.0.0
+ * @date 2022-08-10
+ */
+
 #include "child_class.h"
 #include "stdio.h"
 #include "stdlib.h"

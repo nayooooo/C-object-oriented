@@ -4,7 +4,7 @@
  * @code UTF-8
  * @brief 全局配置文件
  * @version 1.0.0
- * @date 2022-08-10
+ * @date 2022-08-09
  */
 
 #ifndef __CONFIG_H

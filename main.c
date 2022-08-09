@@ -3,7 +3,7 @@
  * @author YEWAN
  * @code UTF-8
  * @brief 实现C语言面向对象的第一次尝试
- * @version 0.1.0
+ * @version 1.1.0
  * @date 2022-08-10
  */
 
