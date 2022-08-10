@@ -28,13 +28,15 @@
 
 struct Class_Method_Table;
 
+/* 类中的公有部分 */
 typedef struct Class_Struct{
     /* 公有属性 */
     uint8_t *name;
     /* 公有行为 */
-    struct Class_Method_Table const *vptr;  // 不知道为啥，需要指向不变变量才行
+    struct Class_Method_Table const *vptr;
 }Class;
 
+/* 对象行为表 */
 struct Class_Method_Table{
     uint8_t *(*Get_Name)(struct Class_Struct const *const cp);
     void (*Set_Name)(struct Class_Struct *const cp, uint8_t *name);

@@ -48,6 +48,7 @@ Class *New_Class(uint8_t *name, uint8_t age)
     /* 对象 */
     Class_Internal *p = (Class_Internal*)malloc(sizeof(Class_Internal));
     /* 对象的行为 */
+    // 需要通过其他的变量进行注册
     struct Class_Method_Table *temp = (struct Class_Method_Table*)malloc(sizeof(struct Class_Method_Table));
 
     /* 赋初值 */
