@@ -23,7 +23,7 @@
 /* 父类宏 ---------------------------------------------*/
 
 #define PARENT_CLASS_OF_CHILD_CLASS(Child_Class, Parent_Class)\
-    ((CHILD_CLASS_PUBLIC)Child_Class->Parent_Class)
+    (((CHILD_CLASS_PUBLIC)Child_Class)->Parent_Class)
 
 /* public struct -------------------------------------*/
 
