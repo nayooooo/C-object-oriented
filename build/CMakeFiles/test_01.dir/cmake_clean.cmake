@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/test_01.dir/src/child_class.obj.d"
   "CMakeFiles/test_01.dir/src/class.obj"
   "CMakeFiles/test_01.dir/src/class.obj.d"
+  "CMakeFiles/test_01.dir/src/polymorphic.obj"
+  "CMakeFiles/test_01.dir/src/polymorphic.obj.d"
   "libtest_01.dll.a"
   "test_01.exe"
   "test_01.exe.manifest"

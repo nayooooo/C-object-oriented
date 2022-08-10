@@ -10,6 +10,7 @@
 #ifndef __CHILD_CLASS_H
 #define __CHILD_CLASS_H
 
+#include "config.h"
 #include "class.h"
 
 /* 公有属性and行为的可见性登记 --------------------------*/

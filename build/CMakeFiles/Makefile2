@@ -80,12 +80,12 @@ clean: CMakeFiles/test_01.dir/clean
 CMakeFiles/test_01.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_01.dir\build.make CMakeFiles/test_01.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_01.dir\build.make CMakeFiles/test_01.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\code\C\VScodeProgram\project\test_01\build\CMakeFiles --progress-num=1,2,3,4 "Built target test_01"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\code\C\VScodeProgram\project\test_01\build\CMakeFiles --progress-num=1,2,3,4,5 "Built target test_01"
 .PHONY : CMakeFiles/test_01.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_01.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\code\C\VScodeProgram\project\test_01\build\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\code\C\VScodeProgram\project\test_01\build\CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/test_01.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\code\C\VScodeProgram\project\test_01\build\CMakeFiles 0
 .PHONY : CMakeFiles/test_01.dir/rule

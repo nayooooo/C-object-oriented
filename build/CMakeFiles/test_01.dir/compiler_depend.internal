@@ -25,8 +25,8 @@ CMakeFiles/test_01.dir/main.obj
 CMakeFiles/test_01.dir/src/child_class.obj
  D:/code/C/VScodeProgram/project/test_01/src/child_class.c
  D:/code/C/VScodeProgram/project/test_01/include/child_class.h
- D:/code/C/VScodeProgram/project/test_01/include/class.h
  D:/code/C/VScodeProgram/project/test_01/include/config.h
+ D:/code/C/VScodeProgram/project/test_01/include/class.h
  C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/stdio.h
  C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/crtdefs.h
  C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/_mingw.h
@@ -74,4 +74,10 @@ CMakeFiles/test_01.dir/src/class.obj
  C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/malloc.h
  C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/string.h
  C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h
+
+CMakeFiles/test_01.dir/src/polymorphic.obj
+ D:/code/C/VScodeProgram/project/test_01/src/polymorphic.c
+ D:/code/C/VScodeProgram/project/test_01/include/polymorphic.h
+ D:/code/C/VScodeProgram/project/test_01/include/config.h
+ D:/code/C/VScodeProgram/project/test_01/include/class.h
 

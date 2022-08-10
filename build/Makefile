@@ -173,6 +173,21 @@ src/class.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_01.dir\build.make CMakeFiles/test_01.dir/src/class.s
 .PHONY : src/class.s
 
+# target to build an object file
+src/polymorphic.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_01.dir\build.make CMakeFiles/test_01.dir/src/polymorphic.obj
+.PHONY : src/polymorphic.obj
+
+# target to preprocess a source file
+src/polymorphic.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_01.dir\build.make CMakeFiles/test_01.dir/src/polymorphic.i
+.PHONY : src/polymorphic.i
+
+# target to generate assembly for a file
+src/polymorphic.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_01.dir\build.make CMakeFiles/test_01.dir/src/polymorphic.s
+.PHONY : src/polymorphic.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -191,6 +206,9 @@ help:
 	@echo ... src/class.obj
 	@echo ... src/class.i
 	@echo ... src/class.s
+	@echo ... src/polymorphic.obj
+	@echo ... src/polymorphic.i
+	@echo ... src/polymorphic.s
 .PHONY : help
 
 

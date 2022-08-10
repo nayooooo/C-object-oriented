@@ -11,6 +11,11 @@
 },
 {
   "directory": "D:/code/C/VScodeProgram/project/test_01/build",
+  "command": "C:\\Users\\YEWAN\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe  @CMakeFiles/test_01.dir/includes_C.rsp -g -o CMakeFiles\\test_01.dir\\src\\polymorphic.obj -c D:\\code\\C\\VScodeProgram\\project\\test_01\\src\\polymorphic.c",
+  "file": "D:/code/C/VScodeProgram/project/test_01/src/polymorphic.c"
+},
+{
+  "directory": "D:/code/C/VScodeProgram/project/test_01/build",
   "command": "C:\\Users\\YEWAN\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe  @CMakeFiles/test_01.dir/includes_C.rsp -g -o CMakeFiles\\test_01.dir\\main.obj -c D:\\code\\C\\VScodeProgram\\project\\test_01\\main.c",
   "file": "D:/code/C/VScodeProgram/project/test_01/main.c"
 }

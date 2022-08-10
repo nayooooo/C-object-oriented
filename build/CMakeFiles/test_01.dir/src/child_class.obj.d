@@ -1,8 +1,8 @@
 CMakeFiles/test_01.dir/src/child_class.obj: \
  D:\code\C\VScodeProgram\project\test_01\src\child_class.c \
  D:/code/C/VScodeProgram/project/test_01/include/child_class.h \
- D:/code/C/VScodeProgram/project/test_01/include/class.h \
  D:/code/C/VScodeProgram/project/test_01/include/config.h \
+ D:/code/C/VScodeProgram/project/test_01/include/class.h \
  C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/stdio.h \
  C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
  C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/_mingw.h \

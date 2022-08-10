@@ -45,7 +45,10 @@ typedef struct{
  */
 Class *New_Class(uint8_t *name, uint8_t age)
 {
+    /* 对象 */
     Class_Internal *p = (Class_Internal*)malloc(sizeof(Class_Internal));
+    /* 对象的行为 */
+    struct Class_Method_Table *temp = (struct Class_Method_Table*)malloc(sizeof(struct Class_Method_Table));
 
     /* 赋初值 */
     memset(p, 0, sizeof(Class_Internal));
@@ -54,9 +57,10 @@ Class *New_Class(uint8_t *name, uint8_t age)
     /* 公共属性 */
     ((CLASS_NAME_VISIBLE)p)->name = name;
     /* 公共行为 */
-    ((CLASS_GET_NAME_VISIBLE)p)->class_Method_Table.Get_Name = Get_Name;
-    ((CLASS_SET_NAME_VISIBLE)p)->class_Method_Table.Set_Name = Set_Name;
-    ((CLASS_GET_AGE_VISIBLE)p)->class_Method_Table.Get_Age = Get_Age;
+    temp->Get_Name = Get_Name;
+    temp->Set_Name = Set_Name;
+    temp->Get_Age = Get_Age;
+    ((CLASS_VPTR_VISIBLE)p)->vptr = temp;
     /* 私有属性 */
     ((CLASS_AGE_VISIBLE)p)->age = age;
     /* 私有行为 */

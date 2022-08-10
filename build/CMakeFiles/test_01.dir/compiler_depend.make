@@ -23,8 +23,8 @@ CMakeFiles/test_01.dir/main.obj: ../main.c \
 
 CMakeFiles/test_01.dir/src/child_class.obj: ../src/child_class.c \
   ../include/child_class.h \
-  ../include/class.h \
   ../include/config.h \
+  ../include/class.h \
   C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/stdio.h \
   C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
   C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/_mingw.h \
@@ -71,6 +71,11 @@ CMakeFiles/test_01.dir/src/class.obj: ../src/class.c \
   C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/malloc.h \
   C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/string.h \
   C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h
+
+CMakeFiles/test_01.dir/src/polymorphic.obj: ../src/polymorphic.c \
+  ../include/polymorphic.h \
+  ../include/config.h \
+  ../include/class.h
 
 
 ../main.c:
@@ -119,6 +124,8 @@ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/stdlib.h:
 
 C:/Users/YEWAN/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h:
 
+../src/polymorphic.c:
+
 ../src/class.c:
 
 C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h:
@@ -126,3 +133,5 @@ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h:
 C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/malloc.h:
 
 C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h:
+
+../include/polymorphic.h:
