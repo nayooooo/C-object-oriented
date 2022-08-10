@@ -33,13 +33,11 @@ typedef struct Class_Struct{
     /* 公有属性 */
     uint8_t *name;
     /* 公有行为 */
-    struct Class_Method_Table const *vptr;
+    struct Class_Method_Table const *vptr;  // 无法通过vptr修改指向区域的内容
 }Class;
 
 /* 对象行为表 */
 struct Class_Method_Table{
-    uint8_t *(*Get_Name)(struct Class_Struct const *const cp);
-    void (*Set_Name)(struct Class_Struct *const cp, uint8_t *name);
     uint8_t (*Get_Age)(struct Class_Struct *const cp);
 };
 
@@ -49,8 +47,6 @@ struct Class_Method_Table{
 Class *New_Class(uint8_t *name, uint8_t age);
 void Delete_Class(Class *cp);
 /* 公有行为函数 */
-static uint8_t *Get_Name(Class const *const cp);
-static void Set_Name(Class *const cp, uint8_t *name);
 /* 私有行为函数 */
 static uint8_t Get_Age(Class *const cp);
 

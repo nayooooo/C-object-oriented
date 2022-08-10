@@ -58,10 +58,8 @@ Class *New_Class(uint8_t *name, uint8_t age)
     /* 公共属性 */
     ((CLASS_NAME_VISIBLE)p)->name = name;
     /* 公共行为 */
-    temp->Get_Name = Get_Name;
-    temp->Set_Name = Set_Name;
+    ((CLASS_VPTR_VISIBLE)p)->vptr = temp;  // vptr指向行为表
     temp->Get_Age = Get_Age;
-    ((CLASS_VPTR_VISIBLE)p)->vptr = temp;
     /* 私有属性 */
     ((CLASS_AGE_VISIBLE)p)->age = age;
     /* 私有行为 */
@@ -82,33 +80,13 @@ void Delete_Class(Class *cp)
     /* 依次释放 */
     /* 继承的类 */
     /* 对象本身 */
+    if(((CLASS_PUBLIC)cp)->vptr != NULL)
+        { free(((void*)((CLASS_PUBLIC)cp)->vptr)); ((CLASS_PUBLIC)cp)->vptr = NULL; }
     if((Class_Internal*)cp != NULL)  // 对象占用的是Class_Internal
         { free((Class_Internal*)cp); cp = NULL; }
 }
 
 /* 对象公共行为函数 -----------------------------------*/
-
-/**
- * @brief 得到公共成员name
- * 
- * @param cp 对象指针
- * @return uint8_t* 公共成员name的指针
- */
-static uint8_t *Get_Name(Class const *const cp)
-{
-    return ((CLASS_NAME_VISIBLE)cp)->name;
-}
-
-/**
- * @brief 更改公共成员name
- * 
- * @param cp 对象指针
- * @param name 对象的公共成员name的指针
- */
-static void Set_Name(Class *const cp, uint8_t *name)
-{
-    ((CLASS_NAME_VISIBLE)cp)->name = name;
-}
 
 /* 对象私有行为函数 -----------------------------------*/
 
