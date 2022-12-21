@@ -55,7 +55,7 @@ Child_Class *New_Child_Class(uint8_t *name, uint8_t age, uint8_t heigh, uint8_t 
     /* 继承的类 */
     ((CHILD_CLASS_PUBLIC)p)->super = New_Class(name, age);
     /* 公共属性 */
-    ((CHILD_CLASS_PUBLIC)p)->this = p;
+    ((CHILD_CLASS_PUBLIC)p)->this = (CHILD_CLASS_THIS_VISIBLE)p;
     ((CHILD_CLASS_PUBLIC)p)->heigh = heigh;
     /* 公共行为 */
     /* 私有属性 */

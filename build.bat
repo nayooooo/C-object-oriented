@@ -1,6 +1,7 @@
 set file_name=C-Object-Oriented
 
-cd ./build
+mkdir build
+cd build
 cmake ..
-mingw32-make.exe
+make.exe
 %file_name%.exe

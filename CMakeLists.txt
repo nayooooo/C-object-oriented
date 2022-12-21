@@ -1,3 +1,4 @@
+cmake_minimum_required(VERSION 3.5)
 project(C-Object-Oriented)
 aux_source_directory(src SRC_SUB)
 aux_source_directory(. SRC_CUR)

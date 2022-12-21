@@ -56,7 +56,7 @@ Class *New_Class(uint8_t *name, uint8_t age)
 
     /* 继承的类 */
     /* 公共属性 */
-    ((CLASS_NAME_VISIBLE)p)->this = p;
+    ((CLASS_NAME_VISIBLE)p)->this = (CLASS_THIS_VISIBLE)p;
     ((CLASS_NAME_VISIBLE)p)->name = name;
     /* 公共行为 */
     ((CLASS_VPTR_VISIBLE)p)->vptr = temp;  // vptr指向行为表
