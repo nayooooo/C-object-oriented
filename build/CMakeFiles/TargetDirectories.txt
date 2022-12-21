@@ -1,3 +1,0 @@
-D:/code/C/VScodeProgram/project/test_01/build/CMakeFiles/test_01.dir
-D:/code/C/VScodeProgram/project/test_01/build/CMakeFiles/edit_cache.dir
-D:/code/C/VScodeProgram/project/test_01/build/CMakeFiles/rebuild_cache.dir
