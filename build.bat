@@ -1,4 +1,4 @@
-set file_name=test_01
+set file_name=C-Object-Oriented
 
 cd ./build
 cmake ..

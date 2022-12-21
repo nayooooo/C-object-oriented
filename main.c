@@ -26,10 +26,10 @@ int main()
 
     Child_Class *ccp = New_Child_Class("wangwu", 28, 80, "unknow");
 
-    printf("The object's name is %s.\r\n", ccp->base_Class->name);
-    printf("The object's age is %d.\r\n", ccp->base_Class->vptr->Get_Age(ccp->base_Class));
-    ccp->base_Class->name = "lisi";
-    printf("The object's name is %s.\r\n", ccp->base_Class->name);
+    printf("The object's name is %s.\r\n", ccp->super->name);
+    printf("The object's age is %d.\r\n", ccp->super->vptr->Get_Age(ccp->super));
+    ccp->super->name = "lisi";
+    printf("The object's name is %s.\r\n", ccp->super->name);
     Delete_Child_Class(ccp);
 
     return 0;

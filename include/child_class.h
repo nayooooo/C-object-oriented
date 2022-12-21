@@ -18,8 +18,10 @@
 /* 指针类型宏定义 */
 #define CHILD_CLASS_PUBLIC              Child_Class*
 /* 公有属性可见性登记 */
+#define CHILD_CLASS_THIS_VISIBLE       CHILD_CLASS_PUBLIC
 #define CHILD_CLASS_HEIGH_VISIBLE       CHILD_CLASS_PUBLIC
 /* 公有行为可见性登记 */
+#define CHILD_CLASS_VPTR_VISIBLE        CHILD_CLASS_PUBLIC
 
 /* 父类宏 ---------------------------------------------*/
 
@@ -28,13 +30,22 @@
 
 /* public struct -------------------------------------*/
 
-typedef struct Class_Child_Struct{
+struct Child_Class_Method_Table;
+
+typedef struct Child_Class_Struct{
     /* 继承Class类 */
-    Class *base_Class;
+    Class *super;
     /* 公有属性 */
+    struct Child_Class_Struct* this;
     uint8_t heigh;
     /* 公有行为 */
+    struct Child_Class_Method_Table const *vptr;
 }Child_Class;
+
+/* 对象行为表 */
+struct Child_Class_Method_Table{
+    void* intro;
+};
 
 /* 类处理函数 -----------------------------------------*/
 

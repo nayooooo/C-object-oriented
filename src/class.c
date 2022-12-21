@@ -38,7 +38,7 @@ typedef struct{
 
 /**
  * @brief 创建一个对象
- * 
+ *
  * @param name 对象的名字的指针(public)
  * @param age 对象的名字的指针(private)
  * @return Class* 对象的指针
@@ -56,6 +56,7 @@ Class *New_Class(uint8_t *name, uint8_t age)
 
     /* 继承的类 */
     /* 公共属性 */
+    ((CLASS_NAME_VISIBLE)p)->this = p;
     ((CLASS_NAME_VISIBLE)p)->name = name;
     /* 公共行为 */
     ((CLASS_VPTR_VISIBLE)p)->vptr = temp;  // vptr指向行为表
@@ -70,7 +71,7 @@ Class *New_Class(uint8_t *name, uint8_t age)
 
 /**
  * @brief 在对象被释放前的析构
- * 
+ *
  * @param cp 对象指针
  */
 void Delete_Class(Class *cp)

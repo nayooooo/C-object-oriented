@@ -17,6 +17,7 @@
 /* 指针类型宏定义 */
 #define CLASS_PUBLIC                Class*
 /* 公有属性可见性登记 */
+#define CLASS_THIS_VISIBLE          CLASS_PUBLIC
 #define CLASS_NAME_VISIBLE          CLASS_PUBLIC
 /* 公有行为可见性登记 */
 #define CLASS_VPTR_VISIBLE          CLASS_PUBLIC
@@ -31,6 +32,7 @@ struct Class_Method_Table;
 /* 类中的公有部分 */
 typedef struct Class_Struct{
     /* 公有属性 */
+    struct Class_Struct* this;
     uint8_t *name;
     /* 公有行为 */
     struct Class_Method_Table const *vptr;  // 无法通过vptr修改指向区域的内容
