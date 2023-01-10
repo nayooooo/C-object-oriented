@@ -1,0 +1,12 @@
+[
+{
+  "directory": "D:/code/C/pointer/package/build",
+  "command": "C:\\Users\\YEWAN\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe  @CMakeFiles/package.dir/includes_C.rsp -g -o CMakeFiles\\package.dir\\main.c.obj -c D:\\code\\C\\pointer\\package\\main.c",
+  "file": "D:/code/C/pointer/package/main.c"
+},
+{
+  "directory": "D:/code/C/pointer/package/build/components/class",
+  "command": "C:\\Users\\YEWAN\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe  @CMakeFiles/class.dir/includes_C.rsp -g -o CMakeFiles\\class.dir\\class.c.obj -c D:\\code\\C\\pointer\\package\\components\\class\\class.c",
+  "file": "D:/code/C/pointer/package/components/class/class.c"
+}
+]

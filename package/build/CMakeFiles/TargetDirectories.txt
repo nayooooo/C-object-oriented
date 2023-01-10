@@ -1,0 +1,8 @@
+D:/code/C/pointer/package/build/CMakeFiles/package.dir
+D:/code/C/pointer/package/build/CMakeFiles/edit_cache.dir
+D:/code/C/pointer/package/build/CMakeFiles/rebuild_cache.dir
+D:/code/C/pointer/package/build/components/CMakeFiles/edit_cache.dir
+D:/code/C/pointer/package/build/components/CMakeFiles/rebuild_cache.dir
+D:/code/C/pointer/package/build/components/class/CMakeFiles/class.dir
+D:/code/C/pointer/package/build/components/class/CMakeFiles/edit_cache.dir
+D:/code/C/pointer/package/build/components/class/CMakeFiles/rebuild_cache.dir

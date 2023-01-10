@@ -1,0 +1,2 @@
+C:\Users\YEWAN\mingw64\bin\ar.exe qc libclass.a CMakeFiles/class.dir/class.c.obj
+C:\Users\YEWAN\mingw64\bin\ranlib.exe libclass.a
